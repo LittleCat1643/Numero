@@ -19,23 +19,23 @@ button.onclick = () => {
             if (number > guess.number) {
                 guess.attempts = guess.attempts - 1;
                 if (!guess.attempts) {
-                    let result = document.querySelector('.result > .content');
                     result.innerHTML = '<p class="red">You\'ve wasted all your attempts! Refresh the page if you want to play again.</p>';
                     let button = document.querySelector('button');
                     button.disabled = true;
-                } 
-                result.innerHTML = '<p class="blue">You didn\'t guess right! The number is smaller. Attempts left: ' + guess.attempts + '</p>';
-                history.innerHTML += '<p class="blue">' + number + '</p>';
+                } else {
+                    result.innerHTML = '<p class="blue">You didn\'t guess right! The number is smaller. Attempts left: ' + guess.attempts + '</p>';
+                    history.innerHTML += '<p class="blue">' + number + '</p>';
+                }
             } else {
                 guess.attempts = guess.attempts - 1;
                 if (!guess.attempts) {
-                    let result = document.querySelector('.result > .content');
                     result.innerHTML = '<p class="red">You\'ve wasted all your attempts! Refresh the page if you want to play again.</p>';
                     let button = document.querySelector('button');
                     button.disabled = true;
-                } 
-                result.innerHTML = '<p class="red">You didn\'t guess right! The number is bigger. Attempts left: ' + guess.attempts + '</p>';
-                history.innerHTML += '<p class="red">' + number + '</p>';
+                } else {
+                    result.innerHTML = '<p class="red">You didn\'t guess right! The number is bigger. Attempts left: ' + guess.attempts + '</p>';
+                    history.innerHTML += '<p class="red">' + number + '</p>';
+                }
             }
         }
     } else {
