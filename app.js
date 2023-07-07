@@ -1,6 +1,6 @@
 let button = document.querySelector('button');
 window.guess = {
-    number: Math.floor(Math.random() * 10)++
+    number: Math.floor(Math.random() * 10) + 1
 };
 console.log(guess.number);
 button.onclick = () => {
