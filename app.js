@@ -3,6 +3,10 @@ window.guess = {
     number: Math.floor(Math.random() * 10) + 1,
     attempts: 5
 };
+if (localStorage.getItem('record')) {
+    let record = document.querySelector('.record');
+    record.innerHTML = localStorage.getItem('record');
+}
 button.onclick = () => {
     let number = document.querySelector('input').value;
     if (number >= 1 && number <= 10) {
@@ -13,6 +17,9 @@ button.onclick = () => {
             history.innerHTML += '<p class="green">' + number + '</p>';
             let button = document.querySelector('button');
             button.disabled = true;
+            if (localStorage.getItem('record') && localStorage.getItem('record') > (6 - guess.attempts)) {
+                localStorage.setItem('record', 6 - guess.attempts);
+            }
         } else {
             let result = document.querySelector('.result > .content');
             let history = document.querySelector('.history > .content');
