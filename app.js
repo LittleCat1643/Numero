@@ -1,12 +1,12 @@
 let button = document.querySelector('button');
 window.guess = {
-    number: Math.floor(Math.random() * 11)
+    number: Math.floor(Math.random() * 10)++
 };
 console.log(guess.number);
 button.onclick = () => {
     let number = document.querySelector('input').value;
-    if (number >= 0 && number <= 10) {
-        if (number === guess.number) {
+    if (number >= 1 && number <= 10) {
+        if (number == guess.number) {
             let result = document.querySelector('.result > .content');
             let history = document.querySelector('.history > .content');
             result.innerHTML = '<p class="green">You guessed it! Refresh the page if you want to play again.</p>';
