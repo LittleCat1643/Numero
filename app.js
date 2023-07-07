@@ -1,6 +1,7 @@
 let button = document.querySelector('button');
 window.guess = {
-    number: Math.floor(Math.random() * 10) + 1
+    number: Math.floor(Math.random() * 10) + 1,
+    attempts: 5
 };
 button.onclick = () => {
     let number = document.querySelector('input').value;
@@ -16,10 +17,12 @@ button.onclick = () => {
             let result = document.querySelector('.result > .content');
             let history = document.querySelector('.history > .content');
             if (number > guess.number) {
-                result.innerHTML = '<p class="blue">You didn\'t guess right! The number is smaller.</p>';
+                guess.attempts - 1;
+                result.innerHTML = '<p class="blue">You didn\'t guess right! The number is smaller. Attempts left: ' + guess.attempts + '</p>';
                 history.innerHTML += '<p class="blue">' + number + '</p>';
             } else {
-                result.innerHTML = '<p class="red">You didn\'t guess right! The number is bigger.</p>';
+                guess.attempts - 1;
+                result.innerHTML = '<p class="red">You didn\'t guess right! The number is bigger. Attempts left: ' + guess.attempts + '</p>';
                 history.innerHTML += '<p class="red">' + number + '</p>';
             }
         }
