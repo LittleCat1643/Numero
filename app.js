@@ -1,7 +1,7 @@
 let button = document.querySelector('button');
 window.guess = {
     number: Math.floor(Math.random() * 10) + 1,
-    attempts: Number(5);
+    attempts: Number(5)
 };
 button.onclick = () => {
     let number = document.querySelector('input').value;
