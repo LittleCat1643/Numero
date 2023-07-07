@@ -17,11 +17,11 @@ button.onclick = () => {
             let result = document.querySelector('.result > .content');
             let history = document.querySelector('.history > .content');
             if (number > guess.number) {
-                guess.attempts - 1;
+                guess.attempts = guess.attempts - 1;
                 result.innerHTML = '<p class="blue">You didn\'t guess right! The number is smaller. Attempts left: ' + guess.attempts + '</p>';
                 history.innerHTML += '<p class="blue">' + number + '</p>';
             } else {
-                guess.attempts - 1;
+                guess.attempts = guess.attempts - 1;
                 result.innerHTML = '<p class="red">You didn\'t guess right! The number is bigger. Attempts left: ' + guess.attempts + '</p>';
                 history.innerHTML += '<p class="red">' + number + '</p>';
             }
