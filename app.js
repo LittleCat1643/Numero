@@ -18,7 +18,7 @@ button.onclick = () => {
             let history = document.querySelector('.history > .content');
             if (number > guess.number) {
                 guess.attempts = guess.attempts - 1;
-                if (!guess.attempts) {
+                if (guess.attempts == '0') {
                     result.innerHTML = '<p class="red">You\'ve wasted all your attempts! Refresh the page if you want to play again.</p>';
                     let button = document.querySelector('button');
                     button.disabled = true;
