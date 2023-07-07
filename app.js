@@ -18,8 +18,10 @@ button.onclick = () => {
             let history = document.querySelector('.history > .content');
             if (number > guess.number) {
                 guess.attempts = guess.attempts - 1;
-                if (guess.attempts == 0) {
-                    alert('You've lost!');
+                if (guess.attempts === 0) {
+                    result.innerHTML = '<p class="red">You've wasted all your attempts! Refresh the page if you want to play again.</p>';
+                    let button = document.querySelector('button');
+                    button.disabled = true;
                 } else {
                     result.innerHTML = '<p class="blue">You didn\'t guess right! The number is smaller. Attempts left: ' + guess.attempts + '</p>';
                     history.innerHTML += '<p class="blue">' + number + '</p>';
