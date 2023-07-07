@@ -19,6 +19,7 @@ button.onclick = () => {
             if (number > guess.number) {
                 guess.attempts = guess.attempts - 1;
                 if (!guess.attempts) {
+                    let result = document.querySelector('.result > .content');
                     result.innerHTML = '<p class="red">You\'ve wasted all your attempts! Refresh the page if you want to play again.</p>';
                     let button = document.querySelector('button');
                     button.disabled = true;
@@ -28,6 +29,7 @@ button.onclick = () => {
             } else {
                 guess.attempts = guess.attempts - 1;
                 if (!guess.attempts) {
+                    let result = document.querySelector('.result > .content');
                     result.innerHTML = '<p class="red">You\'ve wasted all your attempts! Refresh the page if you want to play again.</p>';
                     let button = document.querySelector('button');
                     button.disabled = true;
