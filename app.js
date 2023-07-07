@@ -5,7 +5,7 @@ window.guess = {
 button.onclick = () => {
     let number = document.querySelector('input').value;
     if (number >= 0 && number <= 10) {
-        if (number == guess.number) {
+        if (number === guess.number) {
             let result = document.querySelector('.result > .content');
             let history = document.querySelector('.history > .content');
             result.innerHTML = '<p class="green">You guessed it! Refresh the page if you want to play again.</p>';
