@@ -40,6 +40,6 @@ button.onclick = () => {
         }
     } else {
         let result = document.querySelector('.result > .content');
-        result.innerHTML = '<p class="error">Вы ввели число не от 1 до 10!!</p>';
+        result.innerHTML = '<p class="error">Ты ввёл число не от 1 до 10!</p>';
     }
 }
