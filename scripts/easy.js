@@ -33,13 +33,13 @@ button.onclick = () => {
                     let button = document.querySelector('button');
                     button.disabled = true;
                 } else {
-                    result.innerHTML = '<p class="red">You didn. Attempts left: ' + guess.attempts + '</p>';
+                    result.innerHTML = '<p class="red">Ты не угадал! Загаданное число больше. Осталось попыток: ' + guess.attempts + '</p>';
                     history.innerHTML += '<b class="red">' + number + '   </b>';
                 }
             }
         }
     } else {
         let result = document.querySelector('.result > .content');
-        result.innerHTML = '<p class="error">You entered a number not from the range from 0 to 10!</p>';
+        result.innerHTML = '<p class="error">Вы ввели число не от 1 до 10!!</p>';
     }
 }
