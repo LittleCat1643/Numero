@@ -29,11 +29,11 @@ button.onclick = () => {
             } else {
                 guess.attempts = guess.attempts - 1;
                 if (!guess.attempts) {
-                    result.innerHTML = '<p class="red">You\'ve wasted all your attempts! Refresh the page if you want to play again.</p>';
+                    result.innerHTML = '<p class="red">Ты потратил все попытки. Для того, чтобы попробовать снова, обнови страницу.</p>';
                     let button = document.querySelector('button');
                     button.disabled = true;
                 } else {
-                    result.innerHTML = '<p class="red">You didn\'t guess right! The number is bigger. Attempts left: ' + guess.attempts + '</p>';
+                    result.innerHTML = '<p class="red">You didn. Attempts left: ' + guess.attempts + '</p>';
                     history.innerHTML += '<b class="red">' + number + '   </b>';
                 }
             }
