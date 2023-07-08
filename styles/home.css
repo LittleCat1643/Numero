@@ -1,0 +1,29 @@
+* {
+    font-family: monospace;
+}
+
+.container {
+    text-align: center;
+}
+
+.easy > a {
+    color: green;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.normal > a {
+    color: orange;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.hard > a {
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer {
+    margin-top: 50px;
+}

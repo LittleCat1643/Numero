@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Numero (version: 0.3)</title>
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="../styles/level.css">
 </head>
 <body>
     <div class="container">
@@ -19,20 +19,28 @@
         </div>
         <div class="layout">
             <div class="info">
-                <h3>Choose the difficulty:</h3>
+                <h3>The bot made a number from 1 to 50. Try to guess it! You have 20 attempts.</h3>
             </div>
-            <div class="levels">
-                <div class="easy">
-                    <a href="pages/easy.html">Easy</a>
+            <hr>
+            <div class="form">
+                <input type="number" placeholder="Write here...">
+                <button>Go!</button>
+            </div>
+            <div class="result">
+                <div class="heading">
+                    <h4>Result:</h4>
                 </div>
-                <br>
-                <div class="normal">
-                    <a href="pages/normal.html">Normal</a>
+                <div class="content"></div>
+            </div>
+            <div class="history">
+                <div class="heading">
+                    <h4>History:</h4>
                 </div>
-                <br>
-                <div class="hard">
-                    <a href="pages/hard.html">Hard</a>
-                </div>
+                <div class="content"></div>
+            </div>
+            <hr>
+            <div class="home">
+                <a href="../index.html">Home</a>
             </div>
         </div>
         <div class="footer">
@@ -41,5 +49,6 @@
             </div>
         </div>
     </div>
+    <script src="../scripts/normal.js"></script>
 </body>
 </html>

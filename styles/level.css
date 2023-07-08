@@ -1,0 +1,31 @@
+* {
+    font-family: monospace;
+}
+
+.container {
+    text-align: center;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.error {
+    color: maroon;
+}
+
+.home > a {
+    font-size: 16px;
+}
+
+.footer {
+    margin-top: 50px;
+}
