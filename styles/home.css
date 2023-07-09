@@ -24,6 +24,12 @@
     font-size: 20px;
 }
 
+.ultra > a {
+    color: purple;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 .footer {
     margin-top: 50px;
 }
