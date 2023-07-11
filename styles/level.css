@@ -11,6 +11,12 @@
     color: black;
 }
 
+.banner {
+    background: #ff000055;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .green {
     color: green;
     margin: 10px;
