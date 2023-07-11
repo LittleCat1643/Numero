@@ -16,11 +16,6 @@
     padding: 10px;
     border-radius: 10px;
 }
-
-.history > .content {
-    width: 300px;
-    word-break: break;
-}
     
 .green {
     color: green;
