@@ -1,35 +1,63 @@
 * {
-    font-family: monospace;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .container {
     text-align: center;
 }
 
+.title > a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    background: #ff000055;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.easiest > a {
+    color: lawngreen;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .easy > a {
     color: green;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 700;
 }
 
 .normal > a {
     color: orange;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 700;
 }
 
 .hard > a {
     color: red;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 700;
 }
 
-.ultra > a {
-    color: purple;
+.hardest > a {
+    color: darkred;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 700;
 }
 
 .footer {
     margin-top: 50px;
+}
+
+.footer > .copyright > p > a {
+    font-weight: 700;
+    color: blue;
+    text-decoration: none;
 }

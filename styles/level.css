@@ -1,31 +1,42 @@
 * {
-    font-family: monospace;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .container {
     text-align: center;
 }
 
+.title > a {
+    text-decoration: none;
+    color: black;
+}
+
 .green {
     color: green;
+    margin: 10px;
 }
 
 .blue {
     color: blue;
+    margin: 10px;
 }
 
 .red {
     color: red;
+    margin: 10px;
 }
 
 .error {
     color: maroon;
-}
-
-.home > a {
-    font-size: 16px;
+    margin: 10px;
 }
 
 .footer {
     margin-top: 50px;
+}
+
+.footer > .copyright > p > a {
+    font-weight: 700;
+    color: blue;
+    text-decoration: none;
 }

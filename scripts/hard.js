@@ -10,7 +10,7 @@ button.onclick = () => {
             let result = document.querySelector('.result > .content');
             let history = document.querySelector('.history > .content');
             result.innerHTML = '<p class="green">Ты угадал! Для того, чтобы попробовать снова, обнови страницу.</p>';
-            history.innerHTML += '<b class="green">' + number + '   </b>';
+            history.innerHTML += '<b class="green">' + number + '</b>';
             let button = document.querySelector('button');
             button.disabled = true;
         } else {
@@ -24,7 +24,7 @@ button.onclick = () => {
                     button.disabled = true;
                 } else {
                     result.innerHTML = '<p class="blue">Ты не угадал! Загаданное число меньше. Осталось попыток: ' + guess.attempts + '</p>';
-                    history.innerHTML += '<b class="blue">' + number + '   </b>';
+                    history.innerHTML += '<b class="blue">' + number + '</b>';
                 }
             } else {
                 guess.attempts = guess.attempts - 1;
@@ -34,7 +34,7 @@ button.onclick = () => {
                     button.disabled = true;
                 } else {
                     result.innerHTML = '<p class="red">Ты не угадал! Загаданное число больше. Осталось попыток: ' + guess.attempts + '</p>';
-                    history.innerHTML += '<b class="red">' + number + '   </b>';
+                    history.innerHTML += '<b class="red">' + number + '</b>';
                 }
             }
         }
