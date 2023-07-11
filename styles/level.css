@@ -7,35 +7,19 @@
 }
 
 .green {
-    border-radius: 10px;
-    margin: 10px;
-    background: green;
-    padding: 5px;
-    color: white;
+    color: green;
 }
 
 .blue {
-    border-radius: 10px;
-    margin: 10px;
-    background: blue;
-    padding: 5px;
-    color: white;
+    color: blue;
 }
 
 .red {
-    border-radius: 10px;
-    margin: 10px;
-    background: red;
-    padding: 5px;
-    color: white;
+    color: red;
 }
 
 .error {
-    border-radius: 10px;
-    margin: 10px;
-    background: maroon;
-    padding: 5px;
-    color: white;
+    color: error;
 }
 
 .home > a {
