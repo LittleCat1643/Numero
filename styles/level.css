@@ -7,19 +7,27 @@
 }
 
 .green {
-    color: green;
+    background: green;
+    padding: 5px;
+    color: white;
 }
 
 .blue {
-    color: blue;
+    background: blue;
+    padding: 5px;
+    color: white;
 }
 
 .red {
-    color: red;
+    background: red;
+    padding: 5px;
+    color: white;
 }
 
 .error {
-    color: maroon;
+    background: maroon;
+    padding: 5px;
+    color: white;
 }
 
 .home > a {
