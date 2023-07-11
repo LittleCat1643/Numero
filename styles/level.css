@@ -17,6 +17,10 @@
     border-radius: 10px;
 }
 
+.history > .content > p:nth-clild(5n) {
+    
+}
+    
 .green {
     color: green;
     margin: 10px;
