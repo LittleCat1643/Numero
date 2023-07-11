@@ -17,8 +17,8 @@
     border-radius: 10px;
 }
 
-.history > .content > p:nth-clild(5n) {
-    
+.history > .content > p {
+    word-wrap: break-all;
 }
     
 .green {
