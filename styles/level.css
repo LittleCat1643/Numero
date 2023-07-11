@@ -17,6 +17,10 @@
     border-radius: 10px;
 }
 
+.history > .content {
+    width: 300px;
+}
+
 .history > .content > p {
     word-break: break-all;
 }
