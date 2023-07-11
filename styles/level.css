@@ -18,7 +18,7 @@
 }
 
 .history > .content > p {
-    word-wrap: break-all;
+    word-break: break-all;
 }
     
 .green {
